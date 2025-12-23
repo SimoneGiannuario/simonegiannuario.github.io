@@ -20,7 +20,6 @@ const ContactMe = () => {
     e.preventDefault();
     // Here you would typically send the form data to a backend server
     // or an email service like EmailJS.
-    console.log('Form data submitted:', formData);
     alert('Thank you for your message! I will get back to you soon.');
     // Reset form
     setFormData({

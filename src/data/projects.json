@@ -1,11 +1,26 @@
 {
-  "projects": [
-    {
-      "title": "Dogs' Spring",
-      "description": "Angular project based on a web app for pet grooming which show all services offered by the shop. It's implemented the possibility to signup/signin with Firebase Authentication and booking appointments synchronized with Google Calendar, but never showed.",
-      "link": "https://www.dogs-spring.it",
-      "iframeUrl": "https://www.dogs-spring.it",
-      "techStack": ["Angular", "TypeScript", "Express.JS", "Firebase"]
-    }
-  ]
+  "projects": 
+  {
+    "personalProjects":[
+      {
+        "title": "Dogs' Spring",
+        "description": "Angular project based on a web app for pet grooming which show all services offered by the shop. It's implemented the possibility to signup/signin with Firebase Authentication and booking appointments synchronized with Google Calendar, but never showed.",
+        "link": "",
+        "iframeUrl": "",
+        "deleted": true,
+        "techStack": ["Angular", "TypeScript", "Express.JS", "Firebase"]
+      }
+    ],
+    "professionalProjects":[
+      {
+        "title": "EniPlenitude",
+        "description": "Customer application to manage energy, gas and fiber supply contracts, bills, and services. Developed using Vue.js and jQuery, integrated with Adobe Experience Manager (AEM) for content management.",
+        "link": "https://eniplenitude.com",
+        "iframeUrl": "https://eniplenitude.com",
+        "deleted": false,
+        "techStack": ["Vue.js", "JavaScript", "jQuery", "AEM"]
+      }
+    ]
+
+  }
 }

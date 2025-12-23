@@ -3,28 +3,32 @@ import projectsData from '../data/projects.json'
 
 const Projects: React.FC = () => {
   const [activeProject, setActiveProject] = useState<string | null>(null)
+  const [activeProjectIframeLink, setActiveProjectIframeLink] = useState<string | null>(null)
   const { projects } = projectsData
 
-  const toggleProject = (projectTitle: string) => {
+  const toggleProject = (projectTitle: string, link: string) => {
     setActiveProject(activeProject === projectTitle ? null : projectTitle)
+    setActiveProjectIframeLink(activeProjectIframeLink === link ? null : link)
   }
 
   const closePreview = () => {
     setActiveProject(null)
+    setActiveProjectIframeLink(null)
   }
 
   return (
     <section className="section">
-      <h1>Projects</h1>
+      <h1>Personal Projects</h1>
       <div className="grid">
-        {projects.map((project) => (
+        {projects.personalProjects.map((project) => (
           <article key={project.title} className="card project-card">
             <div className="project-header">
-              <h3>{project.title}</h3>
+              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>)  : (<h3>{project.title}</h3>)}
+                {(!project.deleted && project.iframeUrl) && 
               <div className="project-actions">
                 <button 
                   className="btn btn-small"
-                  onClick={() => toggleProject(project.title)}
+                  onClick={() => toggleProject(project.title, project.iframeUrl)}
                   aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
                 >
                   {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
@@ -33,6 +37,39 @@ const Projects: React.FC = () => {
                   View Project
                 </a>
               </div>
+                }
+            </div>
+            
+            <p>{project.description}</p>
+            
+            <div className="tech-stack">
+              {project.techStack.map((tech) => (
+                <span key={tech} className="tech-tag">{tech}</span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+      <h1>Professional Projects</h1>
+      <div className="grid">
+        {projects.professionalProjects.map((project) => (
+          <article key={project.title} className="card project-card">
+            <div className="project-header">
+              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>)  : (<h3>{project.title}</h3>)}
+              {(!project.deleted && project.iframeUrl) &&
+              <div className="project-actions">
+                <button 
+                  className="btn btn-small"
+                  onClick={() => toggleProject(project.title, project.iframeUrl)}
+                  aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
+                >
+                  {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
+                </button>
+                <a href={project.link} className="btn btn-small btn-secondary" aria-label={`View ${project.title}`}>
+                  View Project
+                </a>
+              </div>
+              }
             </div>
             
             <p>{project.description}</p>
@@ -62,7 +99,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="fullscreen-iframe-container">
               <iframe
-                src={projects.find(p => p.title === activeProject)?.iframeUrl}
+                src={activeProjectIframeLink || ''}
                 title={`Live preview of ${activeProject}`}
                 frameBorder="0"
                 allowFullScreen
