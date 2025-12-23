@@ -17,6 +17,8 @@
         "description": "Customer application to manage energy, gas and fiber supply contracts, bills, and services. Developed using Vue.js and jQuery, integrated with Adobe Experience Manager (AEM) for content management.",
         "link": "https://eniplenitude.com",
         "iframeUrl": "https://eniplenitude.com",
+        "startingDate": "23-11-2023",
+        "endingDate": "present",
         "deleted": false,
         "techStack": ["Vue.js", "JavaScript", "jQuery", "AEM"]
       }

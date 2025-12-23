@@ -72,6 +72,9 @@ const Projects: React.FC = () => {
               }
             </div>
             
+            {project.startingDate && <div className="dates">{`Starting Date: ${project.startingDate}`}</div>}
+            {project.endingDate && <div className="dates">{`Ending Date: ${project.endingDate}`}</div>}
+
             <p>{project.description}</p>
             
             <div className="tech-stack">
