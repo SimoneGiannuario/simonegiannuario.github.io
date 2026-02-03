@@ -1,4 +1,4 @@
-import { MdBuild, MdHome, MdMail, MdWork } from 'react-icons/md';
+import { MdBuild, MdHome, MdMail, MdWork, MdHistory } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
@@ -7,6 +7,7 @@ const navLinks = [
   { path: '/', text: 'Home', end: true, icon: <MdHome /> },
   { path: '/projects', text: 'Projects', end: false, icon: <MdWork /> },
   { path: '/skills', text: 'Skills', end: false, icon: <MdBuild /> },
+  { path: '/experiences', text: 'Experiences', end: false, icon: <MdHistory /> },
   { path: '/contact', text: 'Contact', end: false, icon: <MdMail /> },
 ];
 

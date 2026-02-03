@@ -9,6 +9,8 @@ import Contact from './components/Contact'
 import Styled from './components/StyledComponent'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Experiences from './components/Experiences'
+
 
 const SPLASH_DURATION = 2000; // 2 seconds
 
@@ -17,7 +19,9 @@ const PAGE_TITLES: Record<string, string> = {
   '/projects': 'Projects — Simone Giannuario',
   '/skills': 'Skills — Simone Giannuario',
   '/contact': 'Contact — Simone Giannuario',
+  '/experiences': 'Experiences — Simone Giannuario',
   '/home': 'Prova home — Simone Giannuario',
+
 };
 const DEFAULT_TITLE = 'Simone Giannuario';
 
@@ -60,7 +64,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/experiences" element={<Experiences />} />
           <Route path="/contact" element={<Contact />} />
+
           <Route path="/home" element={<Styled />} />
         </Routes>
       </main>

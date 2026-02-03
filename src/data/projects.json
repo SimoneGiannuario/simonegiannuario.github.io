@@ -1,28 +1,117 @@
 {
-  "projects": 
-  {
-    "personalProjects":[
+  "projects": {
+    "personalProjects": [
       {
         "title": "Dogs' Spring",
         "description": "Angular project based on a web app for pet grooming which show all services offered by the shop. It's implemented the possibility to signup/signin with Firebase Authentication and booking appointments synchronized with Google Calendar, but never showed.",
         "link": "",
         "iframeUrl": "",
         "deleted": true,
-        "techStack": ["Angular", "TypeScript", "Express.JS", "Firebase"]
+        "techStack": [
+          "Angular",
+          "TypeScript",
+          "Express.JS",
+          "Firebase"
+        ]
       }
     ],
-    "professionalProjects":[
+    "professionalProjects": [
       {
-        "title": "EniPlenitude",
-        "description": "Customer application to manage energy, gas and fiber supply contracts, bills, and services. Developed using Vue.js and jQuery, integrated with Adobe Experience Manager (AEM) for content management.",
-        "link": "https://eniplenitude.com",
-        "iframeUrl": "https://eniplenitude.com",
-        "startingDate": "23-11-2023",
+        "title": "Grins -ESG Analytics Platform",
+        "description": "A B2C web application for ESG (Environmental, Social, and Governance) analytics, enabling data-driven reporting and analysis through high-performance dashboards.",
+        "link": "https://portaleimpresacoll.grins.it/",
+        "iframeUrl": "https://portaleimpresacoll.grins.it/",
+        "startingDate": "12-2025",
         "endingDate": "present",
         "deleted": false,
-        "techStack": ["Vue.js", "JavaScript", "jQuery", "AEM"]
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Data Analysis"
+        ]
+      },
+      {
+        "title": "Eni Plenitude",
+        "description": "Large-scale B2C digital platform for the energy sector. Focused on core feature development, performance optimization, and accessibility (A11y) improvements in an Agile/Scrum environment.",
+        "link": "https://eniplenitude.com",
+        "iframeUrl": "https://eniplenitude.com",
+        "startingDate": "12-2023",
+        "endingDate": "present",
+        "deleted": false,
+        "techStack": [
+          "Vue.js",
+          "jQuery",
+          "JavaScript",
+          "AEM",
+          "SCSS"
+        ]
+      },
+      {
+        "title": "ENI - GlobalDoc",
+        "description": "An enterprise-level document management platform. Responsible for UI standardization, Design System implementation, and role-based access control (RBAC) UI logic.",
+        "link": "",
+        "startingDate": "04-2023",
+        "endingDate": "11-2024",
+        "deleted": false,
+        "techStack": [
+          "Angular",
+          "Design Systems",
+          "TypeScript"
+        ]
+      },
+      {
+        "title": "AGI (Publishing Platform)",
+        "description": "A productized publishing platform where I served as Technical Lead. Orchestrated frontend development activities and established technical standards for the Angular-based architecture.",
+        "link": "",
+        "startingDate": "03-2022",
+        "endingDate": "09-2024",
+        "deleted": false,
+        "techStack": [
+          "Angular",
+          "TypeScript",
+          "Leadership"
+        ]
+      },
+      {
+        "title": "Edotto - Healthcare Project for Puglia Region",
+        "description": "Development of a large-scale healthcare application using micro-frontend architecture with Module Federation and state management via NgRx.",
+        "link": "",
+        "startingDate": "11-2022",
+        "endingDate": "04-2023",
+        "deleted": false,
+        "techStack": [
+          "Angular",
+          "NgRx",
+          "Module Federation",
+          "Micro-frontends"
+        ]
+      },
+      {
+        "title": "Quest-IT (AI Project)",
+        "description": "AI-driven document analysis solution featuring a custom-built PDF reader implementation for enhanced user interaction.",
+        "link": "",
+        "startingDate": "01-2022",
+        "endingDate": "02-2022",
+        "deleted": false,
+        "techStack": [
+          "JavaScript",
+          "AI Integration",
+          "PDF.js"
+        ]
+      },
+      {
+        "title": "Enel X",
+        "description": "Maintenance and bug fixing for enterprise-level Angular applications, ensuring stability and performance for green-energy services.",
+        "link": "",
+        "startingDate": "11-2021",
+        "endingDate": "12-2021",
+        "deleted": false,
+        "techStack": [
+          "Angular",
+          "TypeScript",
+          "Enterprise Software"
+        ]
       }
     ]
-
   }
 }

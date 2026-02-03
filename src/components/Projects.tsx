@@ -23,25 +23,29 @@ const Projects: React.FC = () => {
         {projects.personalProjects.map((project) => (
           <article key={project.title} className="card project-card">
             <div className="project-header">
-              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>)  : (<h3>{project.title}</h3>)}
-                {(!project.deleted && project.iframeUrl) && 
-              <div className="project-actions">
-                <button 
-                  className="btn btn-small"
-                  onClick={() => toggleProject(project.title, project.iframeUrl)}
-                  aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
-                >
-                  {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
-                </button>
-                <a href={project.link} className="btn btn-small btn-secondary" aria-label={`View ${project.title}`}>
-                  View Project
-                </a>
-              </div>
-                }
+              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>) : (<h3>{project.title}</h3>)}
+              {!project.deleted && (project.iframeUrl || project.link) &&
+                <div className="project-actions">
+                  {project.iframeUrl && (
+                    <button
+                      className="btn btn-small"
+                      onClick={() => toggleProject(project.title, project.iframeUrl)}
+                      aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
+                    >
+                      {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
+                    </button>
+                  )}
+                  {project.link && (
+                    <a href={project.link} className="btn btn-small btn-secondary" aria-label={`View ${project.title}`}>
+                      View Project
+                    </a>
+                  )}
+                </div>
+              }
             </div>
-            
+
             <p>{project.description}</p>
-            
+
             <div className="tech-stack">
               {project.techStack.map((tech) => (
                 <span key={tech} className="tech-tag">{tech}</span>
@@ -55,28 +59,32 @@ const Projects: React.FC = () => {
         {projects.professionalProjects.map((project) => (
           <article key={project.title} className="card project-card">
             <div className="project-header">
-              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>)  : (<h3>{project.title}</h3>)}
-              {(!project.deleted && project.iframeUrl) &&
-              <div className="project-actions">
-                <button 
-                  className="btn btn-small"
-                  onClick={() => toggleProject(project.title, project.iframeUrl)}
-                  aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
-                >
-                  {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
-                </button>
-                <a href={project.link} className="btn btn-small btn-secondary" aria-label={`View ${project.title}`}>
-                  View Project
-                </a>
-              </div>
+              {project.deleted ? (<h3><del>{project.title}</del> (DELETED)</h3>) : (<h3>{project.title}</h3>)}
+              {!project.deleted && (project.iframeUrl || project.link) &&
+                <div className="project-actions">
+                  {project.iframeUrl && (
+                    <button
+                      className="btn btn-small"
+                      onClick={() => toggleProject(project.title, project.iframeUrl)}
+                      aria-label={`${activeProject === project.title ? 'Hide' : 'Show'} live preview of ${project.title}`}
+                    >
+                      {activeProject === project.title ? 'Hide Preview' : 'Live Preview'}
+                    </button>
+                  )}
+                  {project.link && (
+                    <a href={project.link} className="btn btn-small btn-secondary" aria-label={`View ${project.title}`}>
+                      View Project
+                    </a>
+                  )}
+                </div>
               }
             </div>
-            
+
             {project.startingDate && <div className="dates">{`Starting Date: ${project.startingDate}`}</div>}
             {project.endingDate && <div className="dates">{`Ending Date: ${project.endingDate}`}</div>}
 
             <p>{project.description}</p>
-            
+
             <div className="tech-stack">
               {project.techStack.map((tech) => (
                 <span key={tech} className="tech-tag">{tech}</span>
@@ -92,7 +100,7 @@ const Projects: React.FC = () => {
           <div className="fullscreen-preview-content" onClick={(e) => e.stopPropagation()}>
             <div className="preview-header">
               <h2>{activeProject}</h2>
-              <button 
+              <button
                 className="close-preview-btn"
                 onClick={closePreview}
                 aria-label="Close preview"

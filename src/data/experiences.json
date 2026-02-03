@@ -1,0 +1,40 @@
+{
+  "workExperience": [
+    {
+      "company": "Exprivia",
+      "position": "Senior Frontend Engineer",
+      "location": "Molfetta, Italy",
+      "startDate": "Nov 2021",
+      "endDate": "Present",
+      "description": "As a Senior Frontend Engineer and Technical Lead at Exprivia, I have specialized in building complex, data-driven web applications across diverse industries including Healthcare, Energy, and ESG analytics. My expertise lies in architecting scalable frontend solutions using Angular and React or Vue.js and jQuery components library to be imported in Adobe Experience Manager CMS, implementing robust micro-frontend patterns, and working in Agile teams to deliver high-performance, accessible, and standardized user interfaces, compliant to WCAG 2.1 AA and Design Systems.",
+      "techStack": [
+        "Angular",
+        "Vue.js",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "SCSS",
+        "HTML",
+        "CSS"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Istituto Tecnico Superiore \"Apulia Digital Maker\"",
+      "degree": "Higher Technical Diploma (ITS) - Methods and Technologies for Software Systems Development",
+      "location": "Foggia, Italy",
+      "startDate": "2019",
+      "endDate": "2021",
+      "description": ""
+    },
+    {
+      "institution": "Istituto Tecnico Economico \"Blaise Pascal\"",
+      "degree": "Upper Secondary School Diploma - Administration, Finance and Marketing – Information Systems",
+      "location": "Foggia, Italy",
+      "startDate": "2010",
+      "endDate": "2016",
+      "description": ""
+    }
+  ]
+}
