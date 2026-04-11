@@ -2,6 +2,20 @@
   "projects": {
     "personalProjects": [
       {
+        "title": "Naitiry - Photographic Portfolio",
+        "description": "A bespoke React web application serving as a digital portfolio for a Foggia-based professional photographer. The platform elegantly showcases high-quality photo galleries, details photography packages with an interactive pricelist, and presents the artist's biography. It also leverages a custom admin dashboard for seamless photo management.",
+        "link": "https://naitiry.com",
+        "iframeUrl": "https://naitiry.com",
+        "deleted": false,
+        "techStack": [
+          "React",
+          "TypeScript",
+          "SCSS",
+          "Cloudflare",
+          "Vercel"
+        ]
+      },
+      {
         "title": "Dogs' Spring",
         "description": "Angular project based on a web app for pet grooming which show all services offered by the shop. It's implemented the possibility to signup/signin with Firebase Authentication and booking appointments synchronized with Google Calendar, but never showed.",
         "link": "",
