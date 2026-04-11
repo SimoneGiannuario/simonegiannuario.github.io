@@ -10,6 +10,7 @@ import Styled from './components/StyledComponent'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Experiences from './components/Experiences'
+import NotFound from './components/NotFound'
 
 
 const SPLASH_DURATION = 2000; // 2 seconds
@@ -68,6 +69,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/home" element={<Styled />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
