@@ -1,5 +1,5 @@
 import React from 'react'
-import { 
+import {
   // Frontend
   FaReact, FaAngular, FaVuejs, FaHtml5, FaCss3Alt, FaJs, FaBootstrap,
   // Backend
@@ -7,20 +7,33 @@ import {
   FaFire,
   // DevOps
   FaGitAlt, FaDocker, FaAws, FaJenkins,
-  
+
   // OS
-  FaWindows, FaLinux, FaApple
+  FaWindows, FaLinux, FaApple,
+  FaFilePdf
 } from 'react-icons/fa'
-import { 
-  SiTypescript, SiTailwindcss, SiSass, SiExpress, SiDjango, SiLaravel, 
-  SiSpringboot, SiSharp, SiDotnet, SiMongodb, SiPostgresql, SiMysql, 
-  SiRedis, SiSqlite, SiGraphql, SiPrisma, SiTypeorm, SiVercel, SiNetlify, 
-  SiKubernetes, SiNginx, SiApache, SiJest, SiCypress, 
+import {
+  SiTypescript, SiTailwindcss, SiSass, SiExpress, SiDjango, SiLaravel,
+  SiSpringboot, SiSharp, SiDotnet, SiMongodb, SiPostgresql, SiMysql,
+  SiRedis, SiSqlite, SiGraphql, SiPrisma, SiTypeorm, SiVercel, SiNetlify,
+  SiKubernetes, SiNginx, SiApache, SiJest, SiCypress,
   SiMocha, SiChai, SiEslint, SiPrettier, SiSonarqube, SiPytest,
-  SiUbuntu, SiCentos, SiDebian
+  SiUbuntu, SiCentos, SiDebian,
+  SiJquery,
+  SiNgrx,
+  SiNx,
+  SiVite,
+  SiCloudflare,
+  SiClaude,
+  SiGithubcopilot
 } from 'react-icons/si'
-import { BiGitBranch } from 'react-icons/bi'
+import { BiGitBranch, BiLogoAdobe } from 'react-icons/bi'
 import skillsData from '../data/skills.json'
+import { DiScrum, DiW3C } from 'react-icons/di'
+import { RiCodeAiFill, RiUserCommunityFill } from 'react-icons/ri'
+import { MdDesignServices, MdLeaderboard, MdOutlineReportProblem } from 'react-icons/md'
+import { IoAnalytics } from 'react-icons/io5'
+import { SiAntigravity } from './SiAntigravity'
 
 // Icon mapping function
 const getIconComponent = (iconName: string): React.ReactNode => {
@@ -36,7 +49,13 @@ const getIconComponent = (iconName: string): React.ReactNode => {
     SiTailwindcss: <SiTailwindcss />,
     FaBootstrap: <FaBootstrap />,
     SiSass: <SiSass />,
-    
+    SiJquery: <SiJquery />,
+    DiW3C: <DiW3C />,
+    SiNx: <SiNx />,
+    SiNgrx: <SiNgrx />,
+    FaFilePdf: <FaFilePdf />,
+    MdDesignServices: <MdDesignServices />,
+
     // Backend
     FaNodeJs: <FaNodeJs />,
     SiExpress: <SiExpress />,
@@ -48,7 +67,7 @@ const getIconComponent = (iconName: string): React.ReactNode => {
     SiSpringboot: <SiSpringboot />,
     SiSharp: <SiSharp />,
     SiDotnet: <SiDotnet />,
-    
+
     // Database
     SiMongodb: <SiMongodb />,
     SiPostgresql: <SiPostgresql />,
@@ -59,7 +78,7 @@ const getIconComponent = (iconName: string): React.ReactNode => {
     SiGraphql: <SiGraphql />,
     SiPrisma: <SiPrisma />,
     SiTypeorm: <SiTypeorm />,
-    
+
     // DevOps & Tools
     FaGitAlt: <FaGitAlt />,
     FaDocker: <FaDocker />,
@@ -71,7 +90,12 @@ const getIconComponent = (iconName: string): React.ReactNode => {
     SiKubernetes: <SiKubernetes />,
     SiNginx: <SiNginx />,
     SiApache: <SiApache />,
-    
+    BiLogoAdobe: <BiLogoAdobe />,
+    DiScrum: <DiScrum />,
+    RiCodeAiFill: <RiCodeAiFill />,
+    SiVite: <SiVite />,
+    SiCloudflare: <SiCloudflare />,
+
     // Testing & Quality
     SiJest: <SiJest />,
     SiCypress: <SiCypress />,
@@ -81,16 +105,27 @@ const getIconComponent = (iconName: string): React.ReactNode => {
     SiPrettier: <SiPrettier />,
     SiSonarqube: <SiSonarqube />,
     SiPytest: <SiPytest />,
-    
+
     // Operating Systems
     FaWindows: <FaWindows />,
     FaLinux: <FaLinux />,
     FaApple: <FaApple />,
     SiUbuntu: <SiUbuntu />,
     SiCentos: <SiCentos />,
-    SiDebian: <SiDebian />
+    SiDebian: <SiDebian />,
+
+    //AI Tools
+    SiAntigravity: <SiAntigravity />,
+    SiClaude: <SiClaude />,
+    SiGithubcopilot: <SiGithubcopilot />,
+
+    // Soft Skills
+    MdLeaderboard: <MdLeaderboard />,
+    RiUserCommunityFill: <RiUserCommunityFill />,
+    IoAnalytics: <IoAnalytics />,
+    MdOutlineReportProblem: <MdOutlineReportProblem />
   }
-  
+
   return iconMap[iconName] || <span>⚡</span> // Fallback icon
 }
 
@@ -101,7 +136,7 @@ const Skills: React.FC = () => {
     <section className="section">
       <h1>Skills & Technologies</h1>
       <p>My expertise spans across various domains of software development</p>
-      
+
       <div className="skills-grid">
         {skillCategories.map((category) => (
           <div key={category.name} className="skill-category">

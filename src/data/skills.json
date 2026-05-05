@@ -4,62 +4,224 @@
       "name": "Frontend",
       "icon": "🎨",
       "skills": [
-        { "name": "React", "icon": "FaReact" },
-        { "name": "TypeScript", "icon": "SiTypescript" },
-        { "name": "Angular", "icon": "FaAngular" },
-        { "name": "Vue.js", "icon": "FaVuejs" },
-        { "name": "HTML5", "icon": "FaHtml5" },
-        { "name": "CSS3", "icon": "FaCss3Alt" },
-        { "name": "JavaScript", "icon": "FaJs" },
-        { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
-        { "name": "Bootstrap", "icon": "FaBootstrap" },
-        { "name": "SASS/SCSS", "icon": "SiSass" }
+        {
+          "name": "React",
+          "icon": "FaReact"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "SiTypescript"
+        },
+        {
+          "name": "Angular",
+          "icon": "FaAngular"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "FaVuejs"
+        },
+        {
+          "name": "HTML5",
+          "icon": "FaHtml5"
+        },
+        {
+          "name": "CSS3",
+          "icon": "FaCss3Alt"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "FaJs"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "SiTailwindcss"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "FaBootstrap"
+        },
+        {
+          "name": "SASS/SCSS",
+          "icon": "SiSass"
+        },
+        {
+          "name": "JQuery",
+          "icon": "SiJquery"
+        },
+        {
+          "name": "Accessibility",
+          "icon": "DiW3C"
+        },
+        {
+          "name": "Design Systems",
+          "icon": "MdDesignServices"
+        },
+        {
+          "name": "Micro-frontends",
+          "icon": "SiNx"
+        },
+        {
+          "name": "NgRx",
+          "icon": "SiNgrx"
+        },
+        {
+          "name": "PDF.js",
+          "icon": "FaFilePdf"
+        }
       ]
     },
     {
       "name": "Backend",
       "icon": "⚙️",
       "skills": [
-        { "name": "Node.js", "icon": "FaNodeJs" },
-        { "name": "Express.js", "icon": "SiExpress" },
-        { "name": ".NET", "icon": "SiDotnet" }
+        {
+          "name": "Node.js",
+          "icon": "FaNodeJs"
+        },
+        {
+          "name": "Express.js",
+          "icon": "SiExpress"
+        },
+        {
+          "name": ".NET",
+          "icon": "SiDotnet"
+        }
       ]
     },
     {
       "name": "Database",
       "icon": "🗄️",
       "skills": [
-        { "name": "PostgreSQL", "icon": "SiPostgresql" },
-        { "name": "MySQL", "icon": "SiMysql" },
-        { "name": "Firebase", "icon": "FaFire" },
-        { "name": "SQLite", "icon": "SiSqlite" }
+        {
+          "name": "PostgreSQL",
+          "icon": "SiPostgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "SiMysql"
+        },
+        {
+          "name": "Firebase",
+          "icon": "FaFire"
+        },
+        {
+          "name": "SQLite",
+          "icon": "SiSqlite"
+        }
       ]
     },
     {
       "name": "DevOps & Tools",
       "icon": "🚀",
       "skills": [
-        { "name": "Git", "icon": "FaGitAlt" },
-        { "name": "AWS", "icon": "FaAws" },
-        { "name": "CI/CD", "icon": "BiGitBranch" },
-        { "name": "Jenkins", "icon": "FaJenkins" },
-        { "name": "Nginx", "icon": "SiNginx" }
+        {
+          "name": "Git",
+          "icon": "FaGitAlt"
+        },
+        {
+          "name": "AWS",
+          "icon": "FaAws"
+        },
+        {
+          "name": "CI/CD",
+          "icon": "BiGitBranch"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "FaJenkins"
+        },
+        {
+          "name": "Nginx",
+          "icon": "SiNginx"
+        },
+        {
+          "name": "Adobe Experience Manager",
+          "icon": "BiLogoAdobe"
+        },
+        {
+          "name": "Agile-Scrum",
+          "icon": "DiScrum"
+        },
+        {
+          "name": "AI Integration",
+          "icon": "RiCodeAiFill"
+        },
+        {
+          "name": "Vite",
+          "icon": "SiVite"
+        },
+        {
+          "name": "Cloudflare",
+          "icon": "SiCloudflare"
+        }
       ]
     },
     {
       "name": "Testing & Quality",
       "icon": "🧪",
       "skills": [
-        { "name": "ESLint", "icon": "SiEslint" },
-        { "name": "Prettier", "icon": "SiPrettier" },
-        { "name": "SonarQube", "icon": "SiSonarqube" }
+        {
+          "name": "ESLint",
+          "icon": "SiEslint"
+        },
+        {
+          "name": "Prettier",
+          "icon": "SiPrettier"
+        },
+        {
+          "name": "SonarQube",
+          "icon": "SiSonarqube"
+        }
       ]
     },
     {
       "name": "Operating Systems",
       "icon": "💻",
       "skills": [
-        { "name": "Windows", "icon": "FaWindows" }
+        {
+          "name": "Windows",
+          "icon": "FaWindows"
+        }
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "icon": "🤖",
+      "skills": [
+        {
+          "name": "Antigravity AI",
+          "icon": "SiAntigravity"
+        },
+        {
+          "name": "Claude AI",
+          "icon": "SiClaude"
+        },
+        {
+          "name": "GitHub Copilot",
+          "icon": "SiGithubcopilot"
+        }
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "icon": "🤝",
+      "skills": [
+        {
+          "name": "Leadership",
+          "icon": "MdLeaderboard"
+        },
+        {
+          "name": "Communication & Teamwork",
+          "icon": "RiUserCommunityFill"
+        },
+        {
+          "name": "Data Analysis",
+          "icon": "IoAnalytics"
+        },
+        {
+          "name": "Problem Solving",
+          "icon": "MdOutlineReportProblem"
+        }
       ]
     }
   ]
